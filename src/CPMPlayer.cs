@@ -73,7 +73,7 @@ namespace lcbhop {
             /* Movement, here's the important part */
             QueueJump( );
 
-            if ( _controller.isGrounded )
+            if ( !wishJump && _controller.isGrounded )
                 Friction( );
 
             if ( _controller.isGrounded )
